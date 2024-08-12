@@ -22,6 +22,7 @@
 * [Credits](#credits)
 * [Copyright](#copyright)
 
+
 ## Where did the idea come from?
 
 [Ruby Central](http://rubycentral.org/) typically run Opportunity Scholarship programmes at their conferences.
