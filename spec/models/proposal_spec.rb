@@ -11,6 +11,13 @@ RSpec.describe Proposal do
     expect(proposal.errors[:base]).to include("must only have a maximum of 3 tags")
   end
 
+  it 'can only have up to 3 tags' do
+    proposal = create(:proposal)
+    proposal.tag_list.add("this", "is", "a", "great", "proposal")
+    proposal.valid?
+    expect(proposal.errors[:base]).not_to include("must only have a maximum of 3 tags")
+  end
+
   it 'searches proposals' do
     proposal1 = create(:proposal, title: "Rails is awesome")
     proposal2 = create(:proposal, title: "Hotwire is amazing")
