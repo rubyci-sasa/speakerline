@@ -21,6 +21,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'dotenv-rails'
   gem 'faker'
+  gem 'ruby_ci'
 end
 
 group :development do
